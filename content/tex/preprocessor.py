@@ -7,7 +7,7 @@
 import sys
 import getopt
 import subprocess
-
+# import numpy as np
 
 def escape(input):
     input = input.replace('<', r'\ensuremath{<}')
@@ -190,7 +190,7 @@ def processraw(caption, instream, outstream, listingslang = 'raw'):
         print(source, file=outstream)
         print(r"\end{lstlisting}", file=outstream)
     except:
-        print("\kactlerror{Could not read source.}", file=outstream)
+        print(r"\kactlerror{Could not read source.}", file=outstream)
 
 def parse_include(line):
     line = line.strip()

@@ -1,0 +1,2 @@
+primitive root
+log mod
