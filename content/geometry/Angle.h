@@ -1,3 +1,8 @@
+/**
+ * Author: RR
+ * License: CC0
+ * Description: Return angle and direct angle for AOB. Only work with P<double> and P<long double>
+ */
 #include "Point.h"
 double angle(Point a, Point o, Point b) { // min of directed angle AOB & BOA
     a = a - o; b = b - o;

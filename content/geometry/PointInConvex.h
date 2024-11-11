@@ -1,7 +1,11 @@
+/**
+ * Author: RR
+ * Description: Function for check point in convex polygon
+ * Time: O(\log n)
+ */
 #include "OnSegment.h"
 #include "PointInPolygon.h"
 
-// Check point in convex polygon, O(logN)
 #define Det(a,b,c) ((double)(b.x-a.x)*(double)(c.y-a.y)-(double)(b.y-a.y)*(c.x-a.x))
 PolygonLocation in_convex(vector<Point>& l, Point p){
     int a = 1, b = l.size()-1, c;

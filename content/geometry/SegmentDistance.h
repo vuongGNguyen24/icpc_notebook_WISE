@@ -1,14 +1,16 @@
+/**
+ * Author: RR
+ * Description: Some funtion to find closest point and distance from point P to line and segment AB
+ * Return distance and reference to closest Point --> c
+ * Status: unit tested
+ */
 #include "Point.h"
-// Distance from p to Line ab (closest Point --> c)
-// i.e. c is projection of p on AB
 double distToLine(Point p, Point a, Point b, Point &c) {
     Point ap = p - a, ab = b - a;
     double u = (ap * ab) / ab.norm();
     c = a + (ab * u);
     return (p-c).len();
 }
-
-// Distance from p to segment ab (closest Point --> c)
 double distToLineSegment(Point p, Point a, Point b, Point &c) {
     Point ap = p - a, ab = b - a;
     double u = (ap * ab) / ab.norm();

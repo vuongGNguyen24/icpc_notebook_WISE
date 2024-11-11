@@ -1,15 +1,14 @@
+/**
+ * Author: RR
+ * Description: Finds the the convex hull of $n$ point, destroy the initial points not belonging to the convex hull.
+ Max point to keep colinear triple, and min point is not. NOTE: Max. point DOES NOT WORK when some points are the SAME.
+ * Usage: If minimum point --> define REMOVE_REDUNDANT
+ * Time: O(n \log n)
+ * Status: tested on https://open.kattis.com/problems/convexhull (min points), https://cses.fi/problemset/task/2195 (max points) 
+ */
 #include "OnSegment.h"
 
 typedef vector< Point > Polygon;
- 
-// Convex Hull:
-// If minimum point --> #define REMOVE_REDUNDANT
-// Known issues:
-// - Max. point does not work when some points are the same.
-// Tested:
-// - (min points) https://open.kattis.com/problems/convexhull
-// - (max points) https://cses.fi/problemset/task/2195
- 
  #define REMOVE_REDUNDANT
 template<typename T>
 T area2(P<T> a, P<T> b, P<T> c) { return a%b + b%c + c%a; }

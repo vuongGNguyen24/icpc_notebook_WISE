@@ -1,15 +1,11 @@
+/**
+ * Author: RR
+ * Description: Finds the closet pair among $n$ points. Returns a pair with distance and 2 points. If need point ids -> add ID to struct P. If need exact square dist -> can compute from returned points
+ * Time: O(n \log n)
+ * Status: test on https://open.kattis.com/problems/closestpair1 and https://open.kattis.com/problems/closestpair2
+ */
 #include "Point.h"
-
-// Closest pair
-//
-// Tested:
-// - https://open.kattis.com/problems/closestpair1
-// - https://open.kattis.com/problems/closestpair2
-//
-// Returns: {dist, 2 points}
-//
-// If need point ids -> add ID to struct P
-// If need exact square dist -> can compute from returned points
+ 
 template<typename T>
 std::pair<double, std::pair<P<T>, P<T>>> closest_pair(vector<P<T>> a) {
     int n = a.size();

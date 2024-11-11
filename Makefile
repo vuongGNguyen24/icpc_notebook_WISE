@@ -18,7 +18,7 @@ help:
 	@echo "For more information see the file 'doc/README'"
 
 fast: | build
-	$(LATEXCMD) content/kactl.tex </dev/null
+	$(LATEXCMD) content/kactl.tex
 	cp build/kactl.pdf kactl.pdf
 
 kactl: test-session.pdf | build
@@ -26,7 +26,7 @@ kactl: test-session.pdf | build
 	cp build/kactl.pdf kactl.pdf
 
 clean:
-	cd build && rm -f kactl.aux kactl.log kactl.tmp kactl.toc kactl.pdf kactl.ptc
+	cd build; rm -f kactl.aux kactl.log kactl.tmp kactl.toc kactl.pdf kactl.ptc
 
 veryclean: clean
 	rm -f kactl.pdf test-session.pdf

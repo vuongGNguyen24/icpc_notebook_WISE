@@ -1,14 +1,13 @@
+/**
+ * Author: RR
+ * Description: Given N points. Find the smallest circle enclosing these points.
+ * Time: Except O(N).
+ * Status: test on https://www.spoj.com/problems/ALIENS/
+ * https://www.spoj.com/problems/QCJ4/
+ * https://www.acmicpc.net/problem/2626
+ * https://oj.vnoi.info/problem/icpc22_mt_l
+ */
 #include "Circle.h"
-// Smallest enclosing circle:
-// Given N points. Find the smallest circle enclosing these points.
-// Time complexity: Except O(N)
-//
-// Tested:
-// - https://www.spoj.com/problems/ALIENS/
-// - https://www.spoj.com/problems/QCJ4/
-// - https://www.acmicpc.net/problem/2626
-// - https://oj.vnoi.info/problem/icpc22_mt_l
-
 struct SmallestEnclosingCircle {
     Circle getCircle(vector<Point> points) {
         assert(!points.empty());
@@ -33,7 +32,6 @@ struct SmallestEnclosingCircle {
 
         return c;
     }
-
     // NOTE: This code work only when a, b, c are not collinear and no 2 points are same --> DO NOT
     // copy and use in other cases.
     Circle getCircumcircle(Point a, Point b, Point c) {

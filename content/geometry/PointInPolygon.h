@@ -1,9 +1,13 @@
+/**
+ * Author: RR
+ * Description: check a point is in, or out, or on the boundary of a polygon.
+ * It works with any polygon and P<double>.
+ * Time: O(n)
+ * Status: test on https://open.kattis.com/problems/pointinpolygon and
+ *  https://open.kattis.com/problems/cuttingpolygon
+ */
 #include "Point.h"
 typedef vector<Point> Polygon;
-// Inside polygon: O(N). Works with any polygon
-// Tested:
-// - https://open.kattis.com/problems/pointinpolygon
-// - https://open.kattis.com/problems/cuttingpolygon
 enum PolygonLocation { OUT, ON, IN };
 PolygonLocation in_polygon(const Polygon &p, Point q) {
     if ((int)p.size() == 0) return PolygonLocation::OUT;

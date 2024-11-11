@@ -1,11 +1,13 @@
+/**
+ * Author: RR
+ * Description: Line with some constructor and funtion about postion of 2 lines. NOTE: WILL NOT WORK WHEN a = b = 0.
+ * Point A, B is NOT ENSURED that these are valid
+ */
 #include "Point.h"
-// NOTE: WILL NOT WORK WHEN a = b = 0.
 struct Line {
     double a, b, c;  // ax + by + c = 0
-    Point A, B;  // Added for polygon intersect line. Do not rely on assumption that these are valid
-
+    Point A, B;  // Added for polygon intersect line.
     Line(double _a, double _b, double _c) : a(_a), b(_b), c(_c) {}
-
     Line(Point _A, Point _B) : A(_A), B(_B) {
         a = B.y - A.y;
         b = A.x - B.x;

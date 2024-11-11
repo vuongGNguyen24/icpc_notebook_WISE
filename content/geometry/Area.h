@@ -1,5 +1,9 @@
+/**
+ * Author: RR
+ * Description: Find the area of any polygon
+ * Time: O(n)
+ */
 #include "PointInPolygon.h"
-// Area, perimeter, centroid
 template<typename T>
 T signed_area2(vector<P<T>> p) {
     T area(0);

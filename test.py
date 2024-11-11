@@ -1,0 +1,1 @@
+a = open(r"D:\kactl\content\contest\template.cpp")

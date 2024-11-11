@@ -1,9 +1,10 @@
+/**
+ * Author: RR
+ * Description: check a point p is on segment [a, b]
+ * Both endpoints (p == a or p == b) is also return true.
+ */
 #include "Point.h"
 
-// Segment intersect
-// Tested:
-// - https://cses.fi/problemset/task/2190/
-// returns true if p is on segment [a, b]
 template<typename T>
 bool onSegment(const P<T>& a, const P<T>& b, const P<T>& p) {
     return ccw(a, b, p) == 0

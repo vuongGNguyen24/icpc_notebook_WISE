@@ -1,4 +1,10 @@
 #include ".\template.h"
+/**
+ * Author: Vuong Nguyen
+ * Source: notebook RR
+ * Description: Class to handle points in the plane. T can be e.g. double or long long. (Avoid int.)
+ */
+
 const double EPS = 1e-6;
 const double PI = acos(-1.0); 
 template <class T1, class T2> int cmp(T1 x, T2 y)
