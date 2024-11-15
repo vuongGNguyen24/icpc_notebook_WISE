@@ -3,7 +3,7 @@
  * Date: 2024-05-29
  * License: CC0
  * Description:  Decomposes a tree into vertex disjoint heavy paths and light
- * edges such that the path from any leaf to the root contains at most $\log n$ light edges. 0 index base
+ * edges such that the path from any leaf to the root contains at most $\log n$ light edges. (0 index base)
  * Usage: implenting segment tree.
  *  after push edge in adj[], call dfs(root) and hld(root).
  *  For query path u -> v call query(u, v) (jump to chain containing lca(u, v))
@@ -67,7 +67,7 @@ int query(int u, int v)
     int res = 0;
     while (head[u] != head[v])
     {
-        if (sz[head[u]] > sz[head[v]])
+        if (dep[head[u]] < dep[head[v]])
             swap(u, v);
         res += get(pos[head[u]], pos[u]); 
         u = par[head[u]];
