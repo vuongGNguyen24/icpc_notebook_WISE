@@ -1,12 +1,18 @@
 ## TO USE IN WINDOWS
 First, install latex or miktex.
+
 Second, install all package involve in file content\tex\kactlpkg.sty (in \usepackage tag).
+
 Next, copy content\tex folder, which contain kactlpkg.sty, to local root package (https://miktex.org/kb/texmf-roots might helpful).
+
 Enjoy, by using bash.
+
 # My notebook
 
 This repo customize the KACTL notebook, [KTH](https://en.wikipedia.org/wiki/KTH_Royal_Institute_of_Technology), for my team icpc notebook.
-It consists of about 20 pages of copy-pasteable C++ code, for use in ICPC-style programming competitions. 
+
+It consists of about 20 pages of copy-pasteable C++ code, for use in ICPC-style programming competitions.
+
 I haven't stress-test my code in notebook yet, so be careful when using it.
 
 
