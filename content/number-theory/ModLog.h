@@ -5,7 +5,6 @@
  * Status: tested on https://codeforces.com/gym/535734/problem/L
  */
 #include "ModInt.h"
-
 int log_mod(int a, int b)
 {
     if (a % MOD == 0)

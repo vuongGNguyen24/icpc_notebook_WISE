@@ -38,17 +38,6 @@ int gauss (vector < bitset<N> > a, int n, int m, bitset<N> & ans)
         if (abs(sum - a[i][m]) > 0)
             return 0;
     }
-    // If we need any solution (in case INF solutions), we should be
-    // ok at this point.
-    // If need to solve partially (get which values are fixed/INF value):
-//    for (int i=0; i<m; ++i)
-//        if (where[i] != -1) {
-//            REP(j,n) if (j != i && fabs(a[where[i]][j]) > EPS) {
-//                where[i] = -1;
-//                break;
-//            }
-//        }
-    // Then the variables which has where[i] == -1 --> INF values
     for (int i=0; i<m; ++i)
         if (where[i] == -1)
             return INF;

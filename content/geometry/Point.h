@@ -1,4 +1,3 @@
-#include ".\template.h"
 /**
  * Author: Vuong Nguyen
  * Source: notebook RR

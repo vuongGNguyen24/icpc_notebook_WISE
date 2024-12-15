@@ -8,7 +8,6 @@
  * Status: tested on VNOJ - NKFLOW. TLE on VNOJ - FFLOW.
  * Time: O(n \times m^2) or O((n + m) \times f) with f is the max flow value.
  */
-using namespace std;
 const int INF = 1000000000;
  
 struct Edge {

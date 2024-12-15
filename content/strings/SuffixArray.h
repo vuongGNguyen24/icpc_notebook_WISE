@@ -15,7 +15,6 @@
  * Time: O(n \log n)
  * Status: stress-tested
  */
-#include ".\template.h"
 
 vector <int> build_suffix_array(string &s, int lim = 256)
 {

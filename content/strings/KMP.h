@@ -7,7 +7,6 @@
  * Time: O(n)
  * Status: Tested on https://oj.vnoi.info/problem/substr
  */
-#include ".\template.h"
 
 vector<int> prefix_function(string s) 
 {

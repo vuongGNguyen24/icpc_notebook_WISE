@@ -7,7 +7,7 @@
  * Status: Tested on https://judge.yosupo.jp/problem/counting_primes
  * https://www.spoj.com/problems/NTHPRIME/ (binary search + prime pi)
  */
-#include ".\template.h"
+// #include ".\template.h"
 using ll = long long;
 int isqrt(ll n) {
     return sqrtl(n);
